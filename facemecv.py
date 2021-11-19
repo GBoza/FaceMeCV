@@ -117,7 +117,7 @@ def get_pose_from_cam():
         return (pose_yaw, pose_pitch, pose_roll)
     return
 
-def get_pose_from_faceimage(faceMe_image):
+def get_pose_from_faceimage(faceme_image):
     if faceme_image is None:
         return
     recognize_results = recognize_face_from_faceimage(faceme_image)
