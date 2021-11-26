@@ -79,7 +79,7 @@ def convert_image_to_faceimage(img):
 
 def detect_face_from_faceimage(faceme_img):
     options = {'detectOptions': FaceMe.FR_FEATURE_OPTION_ALL}
-    ret, detecct_result = faceMe_sdk.detect_face(faceme_img, options)
+    ret, detect_result = faceMe_sdk.detect_face(faceme_img, options)
     if FR_FAILED(ret):
         print('detect_face failed, return: ', ret)
         return
